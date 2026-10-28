@@ -1,0 +1,6 @@
+{
+    "name": "Sample Product",
+    "description": "This is a sample product used for demonstration purposes.",
+    "current_price": 11.20,
+    "currency": "EUR"
+}
