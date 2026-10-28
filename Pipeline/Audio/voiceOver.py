@@ -39,13 +39,13 @@ def generate_voiceover(text, output_path):
 
     try:
         voice_prompt = loaded_model.create_voice_clone_prompt(
-        ref_audio="trainVoice/footage/Airspace_text_Ai.wav",
+        ref_audio="/home/jakob/dev/videoGen_pipeline/Pipeline/Audio/trainVoice/footage/Airspace_text_Ai.wav",
         ref_text="Sie merken es wahrscheinlich selbst. Flughäfen sind wieder gut besucht, Flugzeuge gut ausgelastet und die Menschen reisen gerne, sei es für den Urlaub, Geschäftsreisen oder um Familie und Freunde zu besuchen. Zwar war die Pandemie der größte Schock für die zivile Luftfahrt seit Jahrzehnten, doch inwischen hat sich der Luftverkehr weitgehend erholt. 2025 wurden in Europa wieder rund 11000000 Flüge registriert. Das entspricht durchschnisttlich mehr als 30.000 Flügen pro Tag. ",
         )
-        wavs, sr = loaded_model.generate_custom_voice(
-            text=text,
-            language="german",
-            voice_clone_prompt=voice_prompt,
+        wavs, sr = loaded_model.generate_voice_clone(
+        text=text,
+        language="German",
+        voice_clone_prompt=voice_prompt,
         )
         sf.write(output_file, wavs[0], sr)
     except Exception as error:

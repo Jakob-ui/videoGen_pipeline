@@ -33,7 +33,7 @@ def record_webpage():
             context = browser.new_context(record_video_dir=Path("temp/rec"), viewport={"width": 1920, "height": 1080})
             page = context.new_page()
             page.goto(f"http://localhost:{port}/render.html")
-            page.wait_for_timeout(5000)
+            page.wait_for_timeout(30000)
             video = page.video
             page.close()
             context.close()
@@ -96,7 +96,7 @@ def main():
     try:
         output_video_path = record_webpage()
         audio_path = generate_voiceover(
-            "Hallo, dies ist ein Test für die Sprachsynthese.",
+            "Willkommen zu unserem aktuellen Produktvideo. Heute stellen wir Ihnen unseren modernen Kaffeebecher vor. Er ist robust, leicht und eignet sich ideal für unterwegs, im Büro oder auf Reisen. Dank seines zeitlosen Designs liegt der Becher angenehm in der Hand und lässt sich problemlos im Alltag verwenden. Mit einem Preis von 19,99 Euro bietet er eine praktische und stilvolle Lösung für alle, die ihren Kaffee gerne überall genießen möchten. Vielen Dank fürs Zuschauen.",
             "temp/rec/voiceover.wav",
         )
         output_path = convert_to_mp4(
