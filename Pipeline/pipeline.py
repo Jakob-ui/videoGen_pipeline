@@ -1,3 +1,4 @@
+print("Starting pipeline...")
 import os
 from itertools import product
 from pathlib import Path
@@ -9,6 +10,7 @@ from datetime import datetime
 from Audio.voiceOver import generate_voiceover
 
 port = 8140
+video_length = 30000
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -28,12 +30,13 @@ def record_webpage():
     server_thread.start()
     print(f"Server started at http://localhost:{port}/render.html")
     try:
+        print(f"Recording Video, this could take up to " f"{video_length / 1000 + 2:.1f}s")
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(record_video_dir=Path("temp/rec"), viewport={"width": 1920, "height": 1080})
             page = context.new_page()
             page.goto(f"http://localhost:{port}/render.html")
-            page.wait_for_timeout(30000)
+            page.wait_for_timeout(video_length)
             video = page.video
             page.close()
             context.close()

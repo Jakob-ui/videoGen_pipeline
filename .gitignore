@@ -6,3 +6,4 @@ Pipeline/temp/
 Pipeline/Audio/__pycache__/
 __pycache__/
 Pipeline/Audio/__pycache__/voiceOver.cpython-310.pyc
+Pipeline/models/

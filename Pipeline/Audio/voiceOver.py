@@ -12,13 +12,26 @@ class VoiceOverError(Exception):
 def load_model():
     device = "cpu"
     dtype = torch.float32
+    
+    project_root = Path(__file__).resolve().parents[1]
+    local_model_path = project_root / "models" / "qwen3-tts-1.7b-base"
 
     try:
-        model = Qwen3TTSModel.from_pretrained(
-        "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
-        device_map="cpu",
-        dtype=torch.float32,
-        )
+        if local_model_path.is_dir():
+            print(f"Loading local Model: {local_model_path}")
+            model = Qwen3TTSModel.from_pretrained(
+                str(local_model_path),
+                device_map=device,
+                dtype=dtype,
+                local_files_only=True,
+            )
+        else:
+            print("-------------------No local model, using online model-----------------------")
+            model = Qwen3TTSModel.from_pretrained(
+                "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+                device_map=device,
+                dtype=dtype,
+            )
     except Exception as error:
         raise VoiceOverError(
             f"Das TTS-Modell konnte nicht geladen werden: {error}"
@@ -36,6 +49,7 @@ def generate_voiceover(text, output_path):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = Path(f"{output_path}_{timestamp}.wav")
     output_file.parent.mkdir(parents=True, exist_ok=True)
+    print("Generating Voice-over, this could take some time...")
 
     try:
         voice_prompt = loaded_model.create_voice_clone_prompt(
