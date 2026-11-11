@@ -1,5 +1,6 @@
 videoGen/
-animation/
+animation/node_modules/
+animation
 output/
 rec/
 Pipeline/temp/
@@ -7,3 +8,5 @@ Pipeline/Audio/__pycache__/
 __pycache__/
 Pipeline/Audio/__pycache__/voiceOver.cpython-310.pyc
 Pipeline/models/
+animation/node_modules
+animation/dist

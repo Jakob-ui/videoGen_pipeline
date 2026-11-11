@@ -4,10 +4,8 @@ from qwen_tts import Qwen3TTSModel
 from datetime import datetime
 from pathlib import Path
 
-
 class VoiceOverError(Exception):
     pass
-
 
 def load_model():
     device = "cpu"
@@ -39,7 +37,6 @@ def load_model():
 
     print(f"Model loaded on {device} with dtype {dtype}")
     return model
-
 
 def generate_voiceover(text, output_path):
     if not text or not text.strip():
