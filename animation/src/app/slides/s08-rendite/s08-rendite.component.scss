@@ -1,0 +1,5 @@
+.stage { display: flex; flex-direction: column; align-items: center; gap: 70px; margin-top: 90px; }
+.card { min-width: 720px; padding: 56px 80px; border-radius: 32px; background: var(--rz-header); text-align: center; }
+.label { margin: 0; font-size: 30px; color: var(--rz-grey); }
+.price { margin: 16px 0 32px; font-size: 160px; font-weight: 600; line-height: 1; }
+.warning { display: flex; align-items: center; gap: 24px; padding: 24px 40px; border-radius: 20px; background: #fff8c4; font-size: 32px; }

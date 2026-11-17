@@ -1,0 +1,6 @@
+.underlying { display: flex; align-items: center; gap: 48px; margin-top: 60px; }
+.underlying rz-icon { color: var(--rz-blue); }
+.label { margin: 0; font-size: 24px; color: var(--rz-grey); }
+.name { margin: 4px 0; font-size: 38px; font-weight: 600; }
+.text { margin: 0; }
+.timeline { position: absolute; left: 160px; right: 160px; bottom: 120px; }

@@ -1,0 +1,21 @@
+<rz-slide-shell [meta]="meta">
+  <h1 class="headline">{{ s().title }}</h1>
+
+  <div class="zoom-area">
+    <div class="zoom" [style.animation-delay.ms]="cue('zoom')" [style.--rz-dur]="(meta.phaseMs?.['zoom'] ?? 0) + 'ms'">
+      <rz-timeline
+        [animated]="false"
+        [startLabel]="s03()['timelineStart']"
+        [midLabel]="s03()['timelineMid']"
+        [endLabel]="s03()['timelineEnd']"
+      />
+    </div>
+    <div class="marker" [style.animation-delay]="markerDelays()"></div>
+    <div class="date a-fade-up" [style.animation-delay.ms]="cue('marker')">
+      <span class="small">{{ s().dateLabel }}</span><br />
+      <strong>{{ s().date }}</strong>
+    </div>
+  </div>
+
+  <p class="question a-fade-up" [style.animation-delay.ms]="cue('question')">{{ s().question }}</p>
+</rz-slide-shell>

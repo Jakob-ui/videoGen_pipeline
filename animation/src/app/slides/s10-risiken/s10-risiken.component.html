@@ -1,0 +1,20 @@
+<rz-slide-shell [meta]="meta" [headerTitle]="s().title">
+  <div class="columns">
+    <ul class="list">
+      @for (chance of s().chances; track $index) {
+        <li class="a-fade-up" [style.animation-delay.ms]="chanceDelay($index)">
+          <rz-icon class="ok" name="check" [size]="44" />
+          <span>{{ chance }}</span>
+        </li>
+      }
+    </ul>
+    <ul class="list">
+      @for (risk of s().risks; track $index) {
+        <li class="a-fade-up" [style.animation-delay.ms]="cue('risk' + $index)">
+          <rz-icon class="warn" name="warning" [size]="44" />
+          <span>{{ risk }}</span>
+        </li>
+      }
+    </ul>
+  </div>
+</rz-slide-shell>

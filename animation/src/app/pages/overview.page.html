@@ -1,0 +1,44 @@
+@let m = manifest();
+<main class="overview">
+  <header>
+    <h1>Erklärvideo – Folienübersicht</h1>
+    <p>
+      Daten: <strong>{{ m.dataSource }}</strong> · Stand {{ m.dataAsOf }} · {{ m.slides.length }} Folien ·
+      Gesamt <strong>{{ m.totalDurationMs | number }} ms</strong> ·
+      Budgets: <span [class.ok]="allBudgetsOk()" [class.bad]="!allBudgetsOk()">{{ allBudgetsOk() ? 'alle grün' : 'zu lang!' }}</span>
+      · <a routerLink="/video">▶ Ganzes Video ansehen</a>
+    </p>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th><th>Folie</th><th>Dauer</th><th>Start</th><th>Variante</th><th>Sprechtext (spoken)</th><th>Audio-Budget</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (slide of m.slides; track slide.id) {
+        <tr>
+          <td>{{ slide.order }}</td>
+          <td>
+            <a [routerLink]="slide.route">{{ slide.id }}</a><br />
+            <small>{{ titles[slide.id] }}</small>
+          </td>
+          <td class="num">{{ slide.durationMs | number }}</td>
+          <td class="num">{{ slide.startMs | number }}</td>
+          <td>{{ slide.narration?.variant ?? '–' }}</td>
+          <td class="spoken">{{ slide.narration?.spokenText ?? '(ohne Stimme)' }}</td>
+          <td class="num">
+            @if (slide.narration; as n) {
+              <span [class.ok]="n.estimatedMs <= n.maxAudioMs" [class.bad]="n.estimatedMs > n.maxAudioMs">
+                {{ n.estimatedMs | number }} / {{ n.maxAudioMs | number }}
+              </span>
+            } @else {
+              –
+            }
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</main>

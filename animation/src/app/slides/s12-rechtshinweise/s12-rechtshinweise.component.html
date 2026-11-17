@@ -1,0 +1,5 @@
+<rz-slide-shell [meta]="meta" [headerTitle]="s().title">
+  @for (page of s().pages; track $index; let last = $last) {
+    <p class="page" [class.has-out]="!last" [style.animation-delay]="pageDelays($index)">{{ page }}</p>
+  }
+</rz-slide-shell>

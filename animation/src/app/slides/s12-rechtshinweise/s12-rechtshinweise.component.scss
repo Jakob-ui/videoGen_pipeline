@@ -1,0 +1,6 @@
+.page {
+  position: absolute; left: 120px; top: 70px; max-width: 1500px; margin: 0;
+  font-size: 20px; line-height: 1.6;
+  animation: rz-fade 400ms linear both;
+}
+.page.has-out { animation: rz-fade 400ms linear both, rz-fade-out 400ms linear forwards; }

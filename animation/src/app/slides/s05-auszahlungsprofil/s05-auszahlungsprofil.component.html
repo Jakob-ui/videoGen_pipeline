@@ -1,0 +1,5 @@
+<rz-slide-shell [meta]="meta">
+  <h1 class="headline">{{ s()['title'] }}</h1>
+  <rz-chart class="chart" [option]="option()" [width]="size.width" [height]="size.height" />
+  <p class="small per-nominal a-fade" [style.animation-delay.ms]="cue('axes')">{{ s()['perNominal'] }}</p>
+</rz-slide-shell>

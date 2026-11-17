@@ -1,0 +1,13 @@
+<rz-slide-shell [meta]="meta" [headerTitle]="s()['title']">
+  <div class="stage">
+    <div class="card a-fade-up" [style.animation-delay.ms]="cue('price')">
+      <p class="label">{{ s()['priceLabel'] }}</p>
+      <p class="price">{{ s()['price'] }}</p>
+      <rz-as-of-badge [text]="s()['asOf']" />
+    </div>
+    <div class="warning a-fade-up" [style.animation-delay.ms]="cue('warning')">
+      <rz-icon name="info" [size]="48" />
+      <span>{{ s()['warning'] }}</span>
+    </div>
+  </div>
+</rz-slide-shell>

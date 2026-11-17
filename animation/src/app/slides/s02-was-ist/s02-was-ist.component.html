@@ -1,0 +1,11 @@
+<rz-slide-shell [meta]="meta">
+  <p class="ad-label a-fade" [style.animation-delay.ms]="cue('label')">{{ store.content()?.global?.adLabel }}</p>
+  <div class="items">
+    @for (item of s().items; track $index) {
+      <div class="item a-fade-up" [style.animation-delay.ms]="cue('item' + $index)">
+        <rz-icon [name]="item.icon" [size]="120" />
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</rz-slide-shell>

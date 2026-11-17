@@ -1,0 +1,46 @@
+<ng-template #slide>
+  <div class="slide" [class.full]="layout() === 'full'">
+    @if (layout() === 'content') {
+      <rz-header-bar [title]="headerTitle()" />
+    }
+    <div class="slide-content" [style.animation-delay]="fadeDelays()">
+      <ng-content />
+    </div>
+    @if (layout() === 'content') {
+      <rz-footer-note />
+    }
+  </div>
+</ng-template>
+
+@if (embedded) {
+  <ng-container [ngTemplateOutlet]="slide" />
+} @else if (store.isRender) {
+  <rz-stage><ng-container [ngTemplateOutlet]="slide" /></rz-stage>
+} @else {
+  <div class="preview">
+    <rz-stage [scale]="scale()"><ng-container [ngTemplateOutlet]="slide" /></rz-stage>
+
+    <div class="controls">
+      <button type="button" (click)="togglePlay()">{{ clock.playing() ? '❚❚ Pause' : '▶ Play' }}</button>
+      <input
+        type="range"
+        min="0"
+        [max]="meta().durationMs - 1"
+        [value]="clock.t()"
+        (input)="scrub($event)"
+      />
+      <span class="time">{{ clock.t() | number: '1.0-0' }} / {{ meta().durationMs }} ms</span>
+    </div>
+    <nav class="nav">
+      <a routerLink="/">Übersicht</a>
+      @if (prev(); as p) {
+        <a [routerLink]="['/slides', p.id]">← {{ p.id }}</a>
+      }
+      <strong>{{ meta().order }}. {{ meta().title }}</strong>
+      @if (next(); as n) {
+        <a [routerLink]="['/slides', n.id]">{{ n.id }} →</a>
+      }
+      <a routerLink="/video">Ganzes Video</a>
+    </nav>
+  </div>
+}

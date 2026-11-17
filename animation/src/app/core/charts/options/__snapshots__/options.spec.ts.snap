@@ -1,0 +1,2270 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`graph snapshots > examples @ 0 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 70,
+    "left": 130,
+    "right": 560,
+    "top": 50,
+  },
+  "series": [
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "color": "#FDEC09",
+          },
+          "symbolSize": 0,
+          "value": [
+            0,
+            0,
+          ],
+        },
+      ],
+      "id": "guides",
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "formatter": "Startwert",
+              "position": "insideMiddleBottom",
+            },
+            "yAxis": 0,
+          },
+          {
+            "label": {
+              "formatter": "6 Jahre",
+              "position": "end",
+            },
+            "xAxis": 6,
+          },
+        ],
+        "label": {
+          "color": "rgba(26,26,26,0)",
+          "fontSize": 22,
+        },
+        "lineStyle": {
+          "color": "rgba(154,154,154,0)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "scatter",
+      "z": 6,
+    },
+    {
+      "data": [],
+      "id": "a",
+      "lineStyle": {
+        "cap": "round",
+        "color": "rgba(69,104,152,1)",
+        "width": 10,
+      },
+      "smooth": 0.35,
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+            "opacity": 1,
+          },
+          "label": {
+            "color": "rgba(26,26,26,0)",
+            "distance": 24,
+            "fontSize": 26,
+            "formatter": "Index +10 %
+Rückzahlung 110 %",
+            "lineHeight": 38,
+            "position": "right",
+            "show": true,
+          },
+          "symbolSize": 0,
+          "value": [
+            6,
+            10,
+          ],
+        },
+      ],
+      "id": "a-end",
+      "type": "scatter",
+      "z": 5,
+    },
+    {
+      "data": [],
+      "id": "b",
+      "lineStyle": {
+        "cap": "round",
+        "color": "rgba(69,104,152,1)",
+        "width": 10,
+      },
+      "smooth": 0.35,
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+            "opacity": 1,
+          },
+          "label": {
+            "color": "rgba(26,26,26,0)",
+            "distance": 24,
+            "fontSize": 26,
+            "formatter": "Index −30 %
+Rückzahlung 106 % – Kapitalschutz greift",
+            "lineHeight": 38,
+            "position": "right",
+            "show": true,
+          },
+          "symbolSize": 0,
+          "value": [
+            6,
+            -30,
+          ],
+        },
+      ],
+      "id": "b-end",
+      "type": "scatter",
+      "z": 5,
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0)",
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0)",
+      },
+      "onZero": false,
+    },
+    "interval": 1,
+    "max": 6,
+    "min": 0,
+    "type": "value",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0)",
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "+20 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0)",
+      },
+    },
+    "interval": 10,
+    "max": 20,
+    "min": -40,
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > examples @ 0.5 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 70,
+    "left": 130,
+    "right": 560,
+    "top": 50,
+  },
+  "series": [
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "color": "#FDEC09",
+          },
+          "symbolSize": 13,
+          "value": [
+            0,
+            0,
+          ],
+        },
+      ],
+      "id": "guides",
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "formatter": "Startwert",
+              "position": "insideMiddleBottom",
+            },
+            "yAxis": 0,
+          },
+          {
+            "label": {
+              "formatter": "6 Jahre",
+              "position": "end",
+            },
+            "xAxis": 6,
+          },
+        ],
+        "label": {
+          "color": "rgba(26,26,26,0.5)",
+          "fontSize": 22,
+        },
+        "lineStyle": {
+          "color": "rgba(154,154,154,0.5)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "scatter",
+      "z": 6,
+    },
+    {
+      "data": [
+        [
+          0,
+          0,
+        ],
+        [
+          0.5,
+          1.8,
+        ],
+        [
+          1,
+          -0.6,
+        ],
+        [
+          1.5,
+          2.9,
+        ],
+        [
+          2,
+          4.1,
+        ],
+        [
+          2.5,
+          3.2,
+        ],
+        [
+          2.6827853666648425,
+          4.077369759991242,
+        ],
+      ],
+      "id": "a",
+      "lineStyle": {
+        "cap": "round",
+        "color": "rgba(69,104,152,0.625)",
+        "width": 10,
+      },
+      "smooth": 0.35,
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+            "opacity": 0.625,
+          },
+          "label": {
+            "color": "rgba(26,26,26,0.313)",
+            "distance": 24,
+            "fontSize": 26,
+            "formatter": "Index +10 %
+Rückzahlung 110 %",
+            "lineHeight": 38,
+            "position": "right",
+            "show": true,
+          },
+          "symbolSize": 26,
+          "value": [
+            6,
+            10,
+          ],
+        },
+      ],
+      "id": "a-end",
+      "type": "scatter",
+      "z": 5,
+    },
+    {
+      "data": [
+        [
+          0,
+          0,
+        ],
+        [
+          0.5,
+          -2.1,
+        ],
+        [
+          1,
+          1.4,
+        ],
+        [
+          1.5,
+          -4.8,
+        ],
+        [
+          2,
+          -7.9,
+        ],
+        [
+          2.5,
+          -6.2,
+        ],
+        [
+          2.981097435758766,
+          -11.29963281904292,
+        ],
+      ],
+      "id": "b",
+      "lineStyle": {
+        "cap": "round",
+        "color": "rgba(69,104,152,1)",
+        "width": 10,
+      },
+      "smooth": 0.35,
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+            "opacity": 1,
+          },
+          "label": {
+            "color": "rgba(26,26,26,0.5)",
+            "distance": 24,
+            "fontSize": 26,
+            "formatter": "Index −30 %
+Rückzahlung 106 % – Kapitalschutz greift",
+            "lineHeight": 38,
+            "position": "right",
+            "show": true,
+          },
+          "symbolSize": 26,
+          "value": [
+            6,
+            -30,
+          ],
+        },
+      ],
+      "id": "b-end",
+      "type": "scatter",
+      "z": 5,
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0.5)",
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0.5)",
+      },
+      "onZero": false,
+    },
+    "interval": 1,
+    "max": 6,
+    "min": 0,
+    "type": "value",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0.5)",
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "+20 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0.5)",
+      },
+    },
+    "interval": 10,
+    "max": 20,
+    "min": -40,
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > examples @ 1 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 70,
+    "left": 130,
+    "right": 560,
+    "top": 50,
+  },
+  "series": [
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "color": "#FDEC09",
+          },
+          "symbolSize": 26,
+          "value": [
+            0,
+            0,
+          ],
+        },
+      ],
+      "id": "guides",
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "formatter": "Startwert",
+              "position": "insideMiddleBottom",
+            },
+            "yAxis": 0,
+          },
+          {
+            "label": {
+              "formatter": "6 Jahre",
+              "position": "end",
+            },
+            "xAxis": 6,
+          },
+        ],
+        "label": {
+          "color": "rgba(26,26,26,1)",
+          "fontSize": 22,
+        },
+        "lineStyle": {
+          "color": "rgba(154,154,154,1)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "scatter",
+      "z": 6,
+    },
+    {
+      "data": [
+        [
+          0,
+          0,
+        ],
+        [
+          0.5,
+          1.8,
+        ],
+        [
+          1,
+          -0.6,
+        ],
+        [
+          1.5,
+          2.9,
+        ],
+        [
+          2,
+          4.1,
+        ],
+        [
+          2.5,
+          3.2,
+        ],
+        [
+          3,
+          5.6,
+        ],
+        [
+          3.5,
+          4.4,
+        ],
+        [
+          4,
+          6.8,
+        ],
+        [
+          4.5,
+          8.1,
+        ],
+        [
+          5,
+          7,
+        ],
+        [
+          5.5,
+          8.9,
+        ],
+        [
+          6,
+          10,
+        ],
+      ],
+      "id": "a",
+      "lineStyle": {
+        "cap": "round",
+        "color": "rgba(69,104,152,0.25)",
+        "width": 10,
+      },
+      "smooth": 0.35,
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+            "opacity": 0.25,
+          },
+          "label": {
+            "color": "rgba(26,26,26,0.25)",
+            "distance": 24,
+            "fontSize": 26,
+            "formatter": "Index +10 %
+Rückzahlung 110 %",
+            "lineHeight": 38,
+            "position": "right",
+            "show": true,
+          },
+          "symbolSize": 26,
+          "value": [
+            6,
+            10,
+          ],
+        },
+      ],
+      "id": "a-end",
+      "type": "scatter",
+      "z": 5,
+    },
+    {
+      "data": [
+        [
+          0,
+          0,
+        ],
+        [
+          0.5,
+          -2.1,
+        ],
+        [
+          1,
+          1.4,
+        ],
+        [
+          1.5,
+          -4.8,
+        ],
+        [
+          2,
+          -7.9,
+        ],
+        [
+          2.5,
+          -6.2,
+        ],
+        [
+          3,
+          -11.5,
+        ],
+        [
+          3.5,
+          -15.3,
+        ],
+        [
+          4,
+          -13.8,
+        ],
+        [
+          4.5,
+          -19.6,
+        ],
+        [
+          5,
+          -24.1,
+        ],
+        [
+          5.5,
+          -27.2,
+        ],
+        [
+          6,
+          -30,
+        ],
+      ],
+      "id": "b",
+      "lineStyle": {
+        "cap": "round",
+        "color": "rgba(69,104,152,1)",
+        "width": 10,
+      },
+      "smooth": 0.35,
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+            "opacity": 1,
+          },
+          "label": {
+            "color": "rgba(26,26,26,1)",
+            "distance": 24,
+            "fontSize": 26,
+            "formatter": "Index −30 %
+Rückzahlung 106 % – Kapitalschutz greift",
+            "lineHeight": 38,
+            "position": "right",
+            "show": true,
+          },
+          "symbolSize": 26,
+          "value": [
+            6,
+            -30,
+          ],
+        },
+      ],
+      "id": "b-end",
+      "type": "scatter",
+      "z": 5,
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,1)",
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,1)",
+      },
+      "onZero": false,
+    },
+    "interval": 1,
+    "max": 6,
+    "min": 0,
+    "type": "value",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,1)",
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "+20 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,1)",
+      },
+    },
+    "interval": 10,
+    "max": 20,
+    "min": -40,
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > payoff @ 0 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 110,
+    "left": 150,
+    "right": 80,
+    "top": 70,
+  },
+  "series": [
+    {
+      "data": [],
+      "id": "upper",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "formatter": "Startwert",
+              "position": "end",
+            },
+            "xAxis": 0,
+          },
+          {
+            "label": {
+              "show": false,
+            },
+            "yAxis": 100,
+          },
+        ],
+        "label": {
+          "color": "rgba(26,26,26,0)",
+          "fontSize": 22,
+        },
+        "lineStyle": {
+          "color": "rgba(154,154,154,0)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [],
+      "id": "lower",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [],
+      "id": "mid",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+          },
+          "symbolSize": 0,
+          "value": [
+            29,
+            129,
+          ],
+        },
+        {
+          "itemStyle": {
+            "borderColor": "#FDEC09",
+            "borderWidth": 6,
+            "color": "#FFFFFF",
+          },
+          "symbolSize": 0,
+          "value": [
+            6,
+            106,
+          ],
+        },
+      ],
+      "id": "dots",
+      "type": "scatter",
+      "z": 5,
+    },
+    {
+      "data": [
+        {
+          "label": {
+            "color": "rgba(26,26,26,0)",
+            "distance": 18,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "Maximal 129 % = 129 €",
+            "position": "top",
+            "show": true,
+          },
+          "value": [
+            39.5,
+            129,
+          ],
+        },
+        {
+          "label": {
+            "color": "rgba(26,26,26,0)",
+            "distance": 18,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "Kapitalschutz 106 % = 106 €",
+            "position": "top",
+            "show": true,
+          },
+          "value": [
+            -12,
+            106,
+          ],
+        },
+        {
+          "label": {
+            "color": "rgba(26,26,26,0)",
+            "distance": 36,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "1:1 an der Wertentwicklung",
+            "position": "right",
+            "show": true,
+          },
+          "value": [
+            17.5,
+            117.5,
+          ],
+        },
+      ],
+      "id": "labels",
+      "silent": true,
+      "symbolSize": 0,
+      "type": "scatter",
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0)",
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "+40 %",
+        "+100 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0)",
+      },
+      "onZero": false,
+    },
+    "interval": 10,
+    "max": 50,
+    "min": -30,
+    "name": "Wertentwicklung des Index bis zum letzten Bewertungstag",
+    "nameGap": 60,
+    "nameLocation": "middle",
+    "nameTextStyle": {
+      "color": "rgba(26,26,26,0)",
+    },
+    "type": "value",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0)",
+      "customValues": [
+        100,
+        106,
+        129,
+      ],
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "40 %",
+        "100 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0)",
+      },
+      "onZero": false,
+    },
+    "max": 140,
+    "min": 90,
+    "name": "Rückzahlung in %",
+    "nameTextStyle": {
+      "align": "left",
+      "color": "rgba(26,26,26,0)",
+    },
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > payoff @ 0.5 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 110,
+    "left": 150,
+    "right": 80,
+    "top": 70,
+  },
+  "series": [
+    {
+      "data": [
+        [
+          29,
+          129,
+        ],
+        [
+          39.5,
+          129,
+        ],
+      ],
+      "id": "upper",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "formatter": "Startwert",
+              "position": "end",
+            },
+            "xAxis": 0,
+          },
+          {
+            "label": {
+              "show": false,
+            },
+            "yAxis": 100,
+          },
+        ],
+        "label": {
+          "color": "rgba(26,26,26,0.5)",
+          "fontSize": 22,
+        },
+        "lineStyle": {
+          "color": "rgba(154,154,154,0.5)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        [
+          6,
+          106,
+        ],
+        [
+          -12,
+          106,
+        ],
+      ],
+      "id": "lower",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        [
+          6,
+          106,
+        ],
+        [
+          17.5,
+          117.5,
+        ],
+      ],
+      "id": "mid",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+          },
+          "symbolSize": 26,
+          "value": [
+            29,
+            129,
+          ],
+        },
+        {
+          "itemStyle": {
+            "borderColor": "#FDEC09",
+            "borderWidth": 6,
+            "color": "#FFFFFF",
+          },
+          "symbolSize": 26,
+          "value": [
+            6,
+            106,
+          ],
+        },
+      ],
+      "id": "dots",
+      "type": "scatter",
+      "z": 5,
+    },
+    {
+      "data": [
+        {
+          "label": {
+            "color": "rgba(26,26,26,0.5)",
+            "distance": 18,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "Maximal 129 % = 129 €",
+            "position": "top",
+            "show": true,
+          },
+          "value": [
+            39.5,
+            129,
+          ],
+        },
+        {
+          "label": {
+            "color": "rgba(26,26,26,0.5)",
+            "distance": 18,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "Kapitalschutz 106 % = 106 €",
+            "position": "top",
+            "show": true,
+          },
+          "value": [
+            -12,
+            106,
+          ],
+        },
+        {
+          "label": {
+            "color": "rgba(26,26,26,0.5)",
+            "distance": 36,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "1:1 an der Wertentwicklung",
+            "position": "right",
+            "show": true,
+          },
+          "value": [
+            17.5,
+            117.5,
+          ],
+        },
+      ],
+      "id": "labels",
+      "silent": true,
+      "symbolSize": 0,
+      "type": "scatter",
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0.5)",
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "+40 %",
+        "+100 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0.5)",
+      },
+      "onZero": false,
+    },
+    "interval": 10,
+    "max": 50,
+    "min": -30,
+    "name": "Wertentwicklung des Index bis zum letzten Bewertungstag",
+    "nameGap": 60,
+    "nameLocation": "middle",
+    "nameTextStyle": {
+      "color": "rgba(26,26,26,0.5)",
+    },
+    "type": "value",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0.5)",
+      "customValues": [
+        100,
+        106,
+        129,
+      ],
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "40 %",
+        "100 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0.5)",
+      },
+      "onZero": false,
+    },
+    "max": 140,
+    "min": 90,
+    "name": "Rückzahlung in %",
+    "nameTextStyle": {
+      "align": "left",
+      "color": "rgba(26,26,26,0.5)",
+    },
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > payoff @ 1 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 110,
+    "left": 150,
+    "right": 80,
+    "top": 70,
+  },
+  "series": [
+    {
+      "data": [
+        [
+          29,
+          129,
+        ],
+        [
+          50,
+          129,
+        ],
+      ],
+      "id": "upper",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "formatter": "Startwert",
+              "position": "end",
+            },
+            "xAxis": 0,
+          },
+          {
+            "label": {
+              "show": false,
+            },
+            "yAxis": 100,
+          },
+        ],
+        "label": {
+          "color": "rgba(26,26,26,1)",
+          "fontSize": 22,
+        },
+        "lineStyle": {
+          "color": "rgba(154,154,154,1)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        [
+          6,
+          106,
+        ],
+        [
+          -30,
+          106,
+        ],
+      ],
+      "id": "lower",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        [
+          6,
+          106,
+        ],
+        [
+          29,
+          129,
+        ],
+      ],
+      "id": "mid",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 10,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 3,
+            "color": "#FDEC09",
+          },
+          "symbolSize": 26,
+          "value": [
+            29,
+            129,
+          ],
+        },
+        {
+          "itemStyle": {
+            "borderColor": "#FDEC09",
+            "borderWidth": 6,
+            "color": "#FFFFFF",
+          },
+          "symbolSize": 26,
+          "value": [
+            6,
+            106,
+          ],
+        },
+      ],
+      "id": "dots",
+      "type": "scatter",
+      "z": 5,
+    },
+    {
+      "data": [
+        {
+          "label": {
+            "color": "rgba(26,26,26,1)",
+            "distance": 18,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "Maximal 129 % = 129 €",
+            "position": "top",
+            "show": true,
+          },
+          "value": [
+            39.5,
+            129,
+          ],
+        },
+        {
+          "label": {
+            "color": "rgba(26,26,26,1)",
+            "distance": 18,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "Kapitalschutz 106 % = 106 €",
+            "position": "top",
+            "show": true,
+          },
+          "value": [
+            -12,
+            106,
+          ],
+        },
+        {
+          "label": {
+            "color": "rgba(26,26,26,1)",
+            "distance": 36,
+            "fontSize": 26,
+            "fontWeight": 600,
+            "formatter": "1:1 an der Wertentwicklung",
+            "position": "right",
+            "show": true,
+          },
+          "value": [
+            17.5,
+            117.5,
+          ],
+        },
+      ],
+      "id": "labels",
+      "silent": true,
+      "symbolSize": 0,
+      "type": "scatter",
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,1)",
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "+40 %",
+        "+100 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,1)",
+      },
+      "onZero": false,
+    },
+    "interval": 10,
+    "max": 50,
+    "min": -30,
+    "name": "Wertentwicklung des Index bis zum letzten Bewertungstag",
+    "nameGap": 60,
+    "nameLocation": "middle",
+    "nameTextStyle": {
+      "color": "rgba(26,26,26,1)",
+    },
+    "type": "value",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,1)",
+      "customValues": [
+        100,
+        106,
+        129,
+      ],
+      "formatter": [
+        "−40 %",
+        "0 %",
+        "40 %",
+        "100 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,1)",
+      },
+      "onZero": false,
+    },
+    "max": 140,
+    "min": 90,
+    "name": "Rückzahlung in %",
+    "nameTextStyle": {
+      "align": "left",
+      "color": "rgba(26,26,26,1)",
+    },
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > status @ 0 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 70,
+    "left": 140,
+    "right": 70,
+    "top": 50,
+  },
+  "series": [
+    {
+      "data": [],
+      "id": "zones",
+      "markArea": {
+        "data": [
+          [
+            {
+              "itemStyle": {
+                "color": "rgba(154,154,154,0)",
+              },
+              "label": {
+                "color": "rgba(26,26,26,0)",
+                "formatter": "Kapitalschutz 106 %",
+                "position": "insideBottomLeft",
+              },
+              "yAxis": -10,
+            },
+            {
+              "yAxis": 6,
+            },
+          ],
+          [
+            {
+              "itemStyle": {
+                "color": "rgba(69,104,152,0)",
+              },
+              "label": {
+                "color": "rgba(26,26,26,0)",
+                "formatter": "1:1-Teilnahme",
+                "position": "insideTopLeft",
+              },
+              "yAxis": 6,
+            },
+            {
+              "yAxis": 10,
+            },
+          ],
+        ],
+        "label": {
+          "distance": 16,
+          "fontSize": 22,
+          "position": "insideTopLeft",
+        },
+        "silent": true,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "color": "rgba(26,26,26,0)",
+              "distance": [
+                60,
+                10,
+              ],
+              "fontSize": 22,
+              "formatter": "Startwert",
+              "position": "insideEndBottom",
+            },
+            "yAxis": 0,
+          },
+        ],
+        "lineStyle": {
+          "color": "rgba(154,154,154,0)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "line",
+    },
+    {
+      "data": [],
+      "id": "future",
+      "markArea": {
+        "data": [
+          [
+            {
+              "xAxis": 1794355200000,
+            },
+            {
+              "xAxis": 1971561600000,
+            },
+          ],
+        ],
+        "itemStyle": {
+          "color": "rgba(230,228,223,0)",
+          "decal": {
+            "color": "rgba(154,154,154,0)",
+            "dashArrayX": [
+              1,
+              0,
+            ],
+            "dashArrayY": [
+              3,
+              9,
+            ],
+            "rotation": -0.7853981633974483,
+            "symbol": "rect",
+          },
+        },
+        "label": {
+          "color": "rgba(26,26,26,0)",
+          "distance": 70,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "formatter": "noch ca. 5,6 Jahre",
+          "position": "insideTop",
+        },
+        "silent": true,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "color": "rgba(26,26,26,0)",
+              "fontSize": 22,
+              "formatter": "Letzter Bewertungstag 23.06.2032",
+              "position": "insideEndTop",
+            },
+            "xAxis": 1971561600000,
+          },
+        ],
+        "lineStyle": {
+          "color": "rgba(26,26,26,0)",
+          "type": "dashed",
+          "width": 3,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "line",
+    },
+    {
+      "data": [],
+      "id": "history",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 8,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 4,
+            "color": "#FDEC09",
+          },
+          "label": {
+            "distance": 18,
+            "formatter": "{today|Heute +2,44 %}
+{badge|entspricht 106 % Rückzahlung}",
+            "position": "top",
+            "rich": {
+              "badge": {
+                "align": "center",
+                "backgroundColor": "rgba(230,228,223,0)",
+                "borderRadius": 20,
+                "color": "rgba(26,26,26,0)",
+                "fontSize": 22,
+                "padding": [
+                  8,
+                  16,
+                ],
+              },
+              "today": {
+                "align": "center",
+                "color": "rgba(26,26,26,0)",
+                "fontSize": 26,
+                "fontWeight": 600,
+                "lineHeight": 40,
+              },
+            },
+            "show": true,
+          },
+          "symbolSize": 0,
+          "value": [
+            1794355200000,
+            2.4368800365867083,
+          ],
+        },
+      ],
+      "id": "today",
+      "type": "scatter",
+      "z": 10,
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0)",
+      "formatter": [
+        "Jul",
+        "Jän",
+      ],
+      "hideOverlap": true,
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0)",
+      },
+    },
+    "max": 1795564800000,
+    "min": 1782259200000,
+    "splitNumber": 6,
+    "type": "time",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0)",
+      "formatter": [
+        "+1.782.864.000.000 %",
+        "+5 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0)",
+      },
+    },
+    "interval": 5,
+    "max": 10,
+    "min": -10,
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > status @ 0.5 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 70,
+    "left": 140,
+    "right": 70,
+    "top": 50,
+  },
+  "series": [
+    {
+      "data": [],
+      "id": "zones",
+      "markArea": {
+        "data": [
+          [
+            {
+              "itemStyle": {
+                "color": "rgba(154,154,154,0.1)",
+              },
+              "label": {
+                "color": "rgba(26,26,26,0.5)",
+                "formatter": "Kapitalschutz 106 %",
+                "position": "insideBottomLeft",
+              },
+              "yAxis": -10,
+            },
+            {
+              "yAxis": 6,
+            },
+          ],
+          [
+            {
+              "itemStyle": {
+                "color": "rgba(69,104,152,0.03)",
+              },
+              "label": {
+                "color": "rgba(26,26,26,0.5)",
+                "formatter": "1:1-Teilnahme",
+                "position": "insideTopLeft",
+              },
+              "yAxis": 6,
+            },
+            {
+              "yAxis": 10,
+            },
+          ],
+        ],
+        "label": {
+          "distance": 16,
+          "fontSize": 22,
+          "position": "insideTopLeft",
+        },
+        "silent": true,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "color": "rgba(26,26,26,0.5)",
+              "distance": [
+                60,
+                10,
+              ],
+              "fontSize": 22,
+              "formatter": "Startwert",
+              "position": "insideEndBottom",
+            },
+            "yAxis": 0,
+          },
+        ],
+        "lineStyle": {
+          "color": "rgba(154,154,154,0.5)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "line",
+    },
+    {
+      "data": [],
+      "id": "future",
+      "markArea": {
+        "data": [
+          [
+            {
+              "xAxis": 1794355200000,
+            },
+            {
+              "xAxis": 1971561600000,
+            },
+          ],
+        ],
+        "itemStyle": {
+          "color": "rgba(230,228,223,0.3)",
+          "decal": {
+            "color": "rgba(154,154,154,0.125)",
+            "dashArrayX": [
+              1,
+              0,
+            ],
+            "dashArrayY": [
+              3,
+              9,
+            ],
+            "rotation": -0.7853981633974483,
+            "symbol": "rect",
+          },
+        },
+        "label": {
+          "color": "rgba(26,26,26,0.5)",
+          "distance": 70,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "formatter": "noch ca. 5,6 Jahre",
+          "position": "insideTop",
+        },
+        "silent": true,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "color": "rgba(26,26,26,0.5)",
+              "fontSize": 22,
+              "formatter": "Letzter Bewertungstag 23.06.2032",
+              "position": "insideEndTop",
+            },
+            "xAxis": 1971561600000,
+          },
+        ],
+        "lineStyle": {
+          "color": "rgba(26,26,26,0.5)",
+          "type": "dashed",
+          "width": 3,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "line",
+    },
+    {
+      "data": [
+        [
+          1782259200000,
+          0,
+        ],
+        [
+          1782864000000,
+          -0.19200138777183406,
+        ],
+        [
+          1783468800000,
+          -0.4671902351326973,
+        ],
+        [
+          1784073600000,
+          -0.7636687640945494,
+        ],
+        [
+          1784678400000,
+          0.054801217454381046,
+        ],
+        [
+          1785283200000,
+          -1.1086404567030916,
+        ],
+        [
+          1785888000000,
+          -4.811073788459419,
+        ],
+        [
+          1786492800000,
+          -4.7018656069136355,
+        ],
+        [
+          1787097600000,
+          -4.558357382788469,
+        ],
+        [
+          1787702400000,
+          -3.716626452823646,
+        ],
+        [
+          1788307200000,
+          -2.4601409850026013,
+        ],
+        [
+          1788307200000,
+          -2.4601409850026013,
+        ],
+      ],
+      "id": "history",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 8,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 4,
+            "color": "#FDEC09",
+          },
+          "label": {
+            "distance": 28,
+            "formatter": "{today|Heute +2,44 %}
+{badge|entspricht 106 % Rückzahlung}",
+            "position": "right",
+            "rich": {
+              "badge": {
+                "align": "left",
+                "backgroundColor": "rgba(230,228,223,0.5)",
+                "borderRadius": 20,
+                "color": "rgba(26,26,26,0.5)",
+                "fontSize": 22,
+                "padding": [
+                  8,
+                  16,
+                ],
+              },
+              "today": {
+                "align": "left",
+                "color": "rgba(26,26,26,0.5)",
+                "fontSize": 26,
+                "fontWeight": 600,
+                "lineHeight": 40,
+              },
+            },
+            "show": true,
+          },
+          "symbolSize": 26,
+          "value": [
+            1794355200000,
+            2.4368800365867083,
+          ],
+        },
+      ],
+      "id": "today",
+      "type": "scatter",
+      "z": 10,
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0.5)",
+      "formatter": [
+        "2026",
+        "1970",
+      ],
+      "hideOverlap": true,
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0.5)",
+      },
+    },
+    "max": 1883563200000,
+    "min": 1782259200000,
+    "splitNumber": 6,
+    "type": "time",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,0.5)",
+      "formatter": [
+        "+1.782.864.000.000 %",
+        "+5 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,0.5)",
+      },
+    },
+    "interval": 5,
+    "max": 10,
+    "min": -10,
+    "type": "value",
+  },
+}
+`;
+
+exports[`graph snapshots > status @ 1 1`] = `
+{
+  "animation": false,
+  "grid": {
+    "bottom": 70,
+    "left": 140,
+    "right": 70,
+    "top": 50,
+  },
+  "series": [
+    {
+      "data": [],
+      "id": "zones",
+      "markArea": {
+        "data": [
+          [
+            {
+              "itemStyle": {
+                "color": "rgba(154,154,154,0.2)",
+              },
+              "label": {
+                "color": "rgba(26,26,26,1)",
+                "formatter": "Kapitalschutz 106 %",
+                "position": "insideBottomLeft",
+              },
+              "yAxis": -10,
+            },
+            {
+              "yAxis": 6,
+            },
+          ],
+          [
+            {
+              "itemStyle": {
+                "color": "rgba(69,104,152,0.06)",
+              },
+              "label": {
+                "color": "rgba(26,26,26,1)",
+                "formatter": "1:1-Teilnahme",
+                "position": "insideTopLeft",
+              },
+              "yAxis": 6,
+            },
+            {
+              "yAxis": 10,
+            },
+          ],
+        ],
+        "label": {
+          "distance": 16,
+          "fontSize": 22,
+          "position": "insideTopLeft",
+        },
+        "silent": true,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "color": "rgba(26,26,26,1)",
+              "distance": [
+                60,
+                10,
+              ],
+              "fontSize": 22,
+              "formatter": "Startwert",
+              "position": "insideEndBottom",
+            },
+            "yAxis": 0,
+          },
+        ],
+        "lineStyle": {
+          "color": "rgba(154,154,154,1)",
+          "type": "dashed",
+          "width": 2,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "line",
+    },
+    {
+      "data": [],
+      "id": "future",
+      "markArea": {
+        "data": [
+          [
+            {
+              "xAxis": 1794355200000,
+            },
+            {
+              "xAxis": 1971561600000,
+            },
+          ],
+        ],
+        "itemStyle": {
+          "color": "rgba(230,228,223,0.6)",
+          "decal": {
+            "color": "rgba(154,154,154,0.25)",
+            "dashArrayX": [
+              1,
+              0,
+            ],
+            "dashArrayY": [
+              3,
+              9,
+            ],
+            "rotation": -0.7853981633974483,
+            "symbol": "rect",
+          },
+        },
+        "label": {
+          "color": "rgba(26,26,26,1)",
+          "distance": 70,
+          "fontSize": 26,
+          "fontWeight": 600,
+          "formatter": "noch ca. 5,6 Jahre",
+          "position": "insideTop",
+        },
+        "silent": true,
+      },
+      "markLine": {
+        "data": [
+          {
+            "label": {
+              "color": "rgba(26,26,26,1)",
+              "fontSize": 22,
+              "formatter": "Letzter Bewertungstag 23.06.2032",
+              "position": "insideEndTop",
+            },
+            "xAxis": 1971561600000,
+          },
+        ],
+        "lineStyle": {
+          "color": "rgba(26,26,26,1)",
+          "type": "dashed",
+          "width": 3,
+        },
+        "silent": true,
+        "symbol": "none",
+      },
+      "type": "line",
+    },
+    {
+      "data": [
+        [
+          1782259200000,
+          0,
+        ],
+        [
+          1782864000000,
+          -0.19200138777183406,
+        ],
+        [
+          1783468800000,
+          -0.4671902351326973,
+        ],
+        [
+          1784073600000,
+          -0.7636687640945494,
+        ],
+        [
+          1784678400000,
+          0.054801217454381046,
+        ],
+        [
+          1785283200000,
+          -1.1086404567030916,
+        ],
+        [
+          1785888000000,
+          -4.811073788459419,
+        ],
+        [
+          1786492800000,
+          -4.7018656069136355,
+        ],
+        [
+          1787097600000,
+          -4.558357382788469,
+        ],
+        [
+          1787702400000,
+          -3.716626452823646,
+        ],
+        [
+          1788307200000,
+          -2.4601409850026013,
+        ],
+        [
+          1788912000000,
+          -1.4717478040087606,
+        ],
+        [
+          1789516800000,
+          0.8614435981138868,
+        ],
+        [
+          1790121600000,
+          2.1758843102931635,
+        ],
+        [
+          1790726400000,
+          2.461323745091537,
+        ],
+        [
+          1791331200000,
+          1.1839428490324932,
+        ],
+        [
+          1791936000000,
+          -0.5736386431376306,
+        ],
+        [
+          1792540800000,
+          -0.057955244358243174,
+        ],
+        [
+          1793145600000,
+          2.404551260822241,
+        ],
+        [
+          1793750400000,
+          2.5571273122959814,
+        ],
+        [
+          1794355200000,
+          2.4368800365867083,
+        ],
+      ],
+      "id": "history",
+      "lineStyle": {
+        "cap": "round",
+        "color": "#456898",
+        "join": "round",
+        "width": 8,
+      },
+      "symbol": "none",
+      "type": "line",
+    },
+    {
+      "data": [
+        {
+          "itemStyle": {
+            "borderColor": "#1A1A1A",
+            "borderWidth": 4,
+            "color": "#FDEC09",
+          },
+          "label": {
+            "distance": 28,
+            "formatter": "{today|Heute +2,44 %}
+{badge|entspricht 106 % Rückzahlung}",
+            "position": "right",
+            "rich": {
+              "badge": {
+                "align": "left",
+                "backgroundColor": "rgba(230,228,223,1)",
+                "borderRadius": 20,
+                "color": "rgba(26,26,26,1)",
+                "fontSize": 22,
+                "padding": [
+                  8,
+                  16,
+                ],
+              },
+              "today": {
+                "align": "left",
+                "color": "rgba(26,26,26,1)",
+                "fontSize": 26,
+                "fontWeight": 600,
+                "lineHeight": 40,
+              },
+            },
+            "show": true,
+          },
+          "symbolSize": 26,
+          "value": [
+            1794355200000,
+            2.4368800365867083,
+          ],
+        },
+      ],
+      "id": "today",
+      "type": "scatter",
+      "z": 10,
+    },
+  ],
+  "xAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,1)",
+      "formatter": [
+        "2026",
+        "1970",
+      ],
+      "hideOverlap": true,
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,1)",
+      },
+    },
+    "max": 1971561600000,
+    "min": 1782259200000,
+    "splitNumber": 6,
+    "type": "time",
+  },
+  "yAxis": {
+    "axisLabel": {
+      "color": "rgba(26,26,26,1)",
+      "formatter": [
+        "+1.782.864.000.000 %",
+        "+5 %",
+      ],
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "rgba(154,154,154,1)",
+      },
+    },
+    "interval": 5,
+    "max": 10,
+    "min": -10,
+    "type": "value",
+  },
+}
+`;

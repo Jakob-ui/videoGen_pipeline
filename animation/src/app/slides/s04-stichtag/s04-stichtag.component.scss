@@ -1,0 +1,14 @@
+.zoom-area { position: relative; height: 330px; margin-top: 50px; overflow: hidden; }
+.zoom {
+  position: absolute; left: 40px; right: 40px; top: 100px;
+  transform-origin: 100% 50%;
+  animation: s04-zoom var(--rz-dur, 1200ms) var(--rz-ease) both;
+}
+@keyframes s04-zoom { from { transform: none; } to { transform: translateX(-120px) scale(1.5); opacity: 0.35; } }
+.marker {
+  position: absolute; right: 125px; top: 140px; width: 64px; height: 64px; border-radius: 50%;
+  background: var(--rz-yellow); border: 5px solid var(--rz-text);
+  animation: rz-pop 500ms var(--rz-ease) both, rz-pulse 900ms ease-in-out 2;
+}
+.date { position: absolute; right: 100px; top: 0; text-align: right; font-size: 40px; background: var(--rz-bg); padding: 0 12px; }
+.question { margin: 50px 0 0; text-align: center; font-size: 64px; font-weight: 600; }

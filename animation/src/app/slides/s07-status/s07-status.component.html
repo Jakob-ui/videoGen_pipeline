@@ -1,0 +1,8 @@
+<rz-slide-shell [meta]="meta">
+  <div class="title-row a-fade-up" [style.animation-delay.ms]="cue('title')">
+    <h1 class="headline">{{ s()['title'] }}</h1>
+    <rz-as-of-badge [text]="s()['asOf']" />
+  </div>
+  <rz-chart class="chart" [option]="option()" [width]="size.width" [height]="size.height" />
+  <p class="small note a-fade" [style.animation-delay.ms]="cue('note')">{{ s()['note'] }}</p>
+</rz-slide-shell>

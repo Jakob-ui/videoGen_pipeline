@@ -1,0 +1,102 @@
+// Global design tokens (Poppins is included via angular.json) and the seekable CSS animations (AGENT.md §9.1).
+
+:root {
+  --rz-bg: #ffffff;
+  --rz-header: #f5f3ef;
+  --rz-yellow: #fdec09; // taken from the logo
+  --rz-blue: #456898;
+  --rz-blue-light: #9fb3cf;
+  --rz-grey: #9a9a9a;
+  --rz-grey-light: #e6e4df;
+  --rz-text: #1a1a1a;
+  --rz-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--rz-text);
+  background: #2b2b2b;
+}
+
+body.render { background: var(--rz-bg); overflow: hidden; }
+
+// ---------- Slide frame ----------
+.slide { position: absolute; inset: 0; background: var(--rz-bg); }
+.slide-content {
+  position: absolute;
+  inset: 90px 0 0 0;
+  padding: 70px 120px 100px;
+  animation: rz-fade 400ms linear both, rz-fade-out 400ms linear forwards;
+}
+.slide.full .slide-content { inset: 0; padding: 0; }
+
+.headline { margin: 0 0 12px; font-size: 52px; font-weight: 600; line-height: 1.2; }
+.subline { margin: 0; font-size: 30px; color: var(--rz-grey); }
+.text { font-size: 32px; line-height: 1.4; }
+.small { font-size: 22px; color: #555; }
+
+.rz-icon {
+  display: inline-block;
+  flex: none;
+  background: currentColor;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.pill {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 999px;
+  background: var(--rz-yellow);
+  font-size: 34px;
+  font-weight: 600;
+}
+
+// ---------- Animations (all elements exist from t = 0; they are only revealed by animations) ----------
+// Delays are bound from meta.cues; SlideClock pauses every animation and sets currentTime = t.
+.a-fade-up { animation: rz-fade-up 500ms var(--rz-ease) both; }
+.a-fade { animation: rz-fade 500ms var(--rz-ease) both; }
+.a-pop { animation: rz-pop 500ms var(--rz-ease) both; }
+.a-grow-x { animation: rz-grow-x var(--rz-dur, 1500ms) var(--rz-ease) both; transform-origin: left center; }
+
+@keyframes rz-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rz-fade-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes rz-fade-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes rz-pop {
+  0% { opacity: 0; transform: scale(0.6); }
+  70% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes rz-grow-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes rz-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(253, 236, 9, 0.8); }
+  50% { box-shadow: 0 0 0 36px rgba(253, 236, 9, 0); }
+}
+@keyframes rz-blur-in {
+  from { opacity: 0; filter: blur(20px); transform: scale(0.96); }
+  to { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+
+// ---------- Preview UI (never part of the video) ----------
+.preview { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 16px 24px; color: #eee; font-family: system-ui, sans-serif; }
+.controls { display: flex; align-items: center; gap: 16px; width: min(1200px, 100%); }
+.controls input[type='range'] { flex: 1; }
+.controls button { min-width: 110px; padding: 6px 12px; font-size: 15px; cursor: pointer; }
+.time { font-variant-numeric: tabular-nums; min-width: 170px; text-align: right; }
+.nav { display: flex; gap: 24px; font-size: 14px; }
+.nav a { color: #9fc3ff; }
+
+.error-box {
+  margin: 48px auto;
+  max-width: 900px;
+  padding: 24px 32px;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #a00;
+  font-family: system-ui, sans-serif;
+  white-space: pre-wrap;
+}

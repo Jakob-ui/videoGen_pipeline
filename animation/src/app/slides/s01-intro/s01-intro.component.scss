@@ -1,0 +1,10 @@
+.intro { position: absolute; inset: 0; background: var(--rz-header); }
+.center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px; text-align: center; }
+.logo { height: 110px; }
+.headline { font-size: 64px; margin: 0; color: black; }
+.subtitle { margin: 0; font-size: 44px; font-weight: 500; color: black; }
+.icons { position: absolute; right: 90px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 40px; }
+.icons rz-icon { color: var(--rz-blue); opacity: 0.15; }
+.pill {
+  color: black;
+}

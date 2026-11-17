@@ -1,0 +1,25 @@
+<rz-slide-shell [meta]="meta">
+  <div class="a-fade-up" [style.animation-delay.ms]="cue('title')">
+    <h1 class="headline">{{ s().title }}</h1>
+    <p class="subline">{{ s().isin }}</p>
+  </div>
+
+  <div class="underlying">
+    <rz-icon class="a-pop" name="globe" [size]="140" [style.animation-delay.ms]="cue('underlying')" />
+    <div>
+      <p class="label a-fade-up" [style.animation-delay.ms]="cue('underlying')">{{ s().underlyingLabel }}</p>
+      <p class="name a-fade-up" [style.animation-delay.ms]="cue('underlying')">{{ s().underlying }}</p>
+      <p class="text a-fade-up" [style.animation-delay.ms]="cue('description')">{{ s().underlyingDescription }}</p>
+    </div>
+  </div>
+
+  <rz-timeline
+    class="timeline"
+    [startLabel]="s().timelineStart"
+    [midLabel]="s().timelineMid"
+    [endLabel]="s().timelineEnd"
+    [lineDelayMs]="cue('timeline')"
+    [lineDurMs]="meta.phaseMs?.['timeline'] ?? 0"
+    [endDelayMs]="cue('endMarker')"
+  />
+</rz-slide-shell>

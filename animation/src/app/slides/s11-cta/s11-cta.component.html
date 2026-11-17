@@ -1,0 +1,11 @@
+<rz-slide-shell [meta]="meta">
+  <div class="cta">
+    <h1 class="headline a-fade-up" [style.animation-delay.ms]="cue('title')">{{ s().title }}</h1>
+    <div class="url a-pop" [style.animation-delay.ms]="cue('url')">
+      <rz-icon name="link" [size]="72" />
+      <span>{{ s().url }}</span>
+    </div>
+    <p class="isin a-fade-up" [style.animation-delay.ms]="cue('isin')">{{ s().isin }}</p>
+    <p class="text a-fade-up" [style.animation-delay.ms]="cue('docs')">{{ s().docs }}</p>
+  </div>
+</rz-slide-shell>

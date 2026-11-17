@@ -1,0 +1,11 @@
+.overview { padding: 24px 32px; font-family: system-ui, sans-serif; color: #eee; }
+h1 { margin: 0 0 8px; font-size: 26px; }
+a { color: #9fc3ff; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #444; text-align: left; vertical-align: top; }
+th { color: #aaa; font-weight: 500; }
+.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.spoken { max-width: 760px; line-height: 1.45; }
+.ok { color: #4cd47a; font-weight: 600; }
+.bad { color: #ff5a5a; font-weight: 600; }
+small { color: #aaa; }
