@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "locale": "de-AT",
+  "_comment": "Feste Texte für Bild (screen) und Sprecher (narration). Platzhalter {{pfad|formatter}} werden aus product.mock.json (später Server-JSON), aus den abgeleiteten Werten (derived.*) und aus illustrations.* befüllt. Texte NICHT im Code duplizieren.",
+  "global": {
+    "brand": "Raiffeisen Zertifikate",
+    "adLabel": "Werbemitteilung",
+    "footerNote": "Beachten Sie die Rechtshinweise am Ende des Videos",
+    "asOfLabel": "Stand: {{asOf|date}}",
+    "fictionalLabel": "Fiktive Darstellung – keine Prognose"
+  },
+  "pronunciations": {
+    "Global Aktien Bond 106 % XII": "Global Aktien Bond 106 Prozent, Serie 12",
+    "MSCI World 4.5% Decrement EUR Index": "M S C I World 4 Komma 5 Prozent Decrement Index",
+    "MSCI": "M S C I",
+    "1.300": "1300",
+    "raiffeisenzertifikate.at": "raiffeisenzertifikate punkt a t"
+  },
+  "illustrations": {
+    "a": {
+      "endPct": 10,
+      "path": [
+        0,
+        1.8,
+        -0.6,
+        2.9,
+        4.1,
+        3.2,
+        5.6,
+        4.4,
+        6.8,
+        8.1,
+        7.0,
+        8.9,
+        10
+      ]
+    },
+    "b": {
+      "endPct": -30,
+      "path": [
+        0,
+        -2.1,
+        1.4,
+        -4.8,
+        -7.9,
+        -6.2,
+        -11.5,
+        -15.3,
+        -13.8,
+        -19.6,
+        -24.1,
+        -27.2,
+        -30
+      ]
+    }
+  },
+  "slides": {
+    "s01-intro": {
+      "screen": {
+        "title": "{{global.brand}}",
+        "pill": "Kapitalschutz-Zertifikat erklärt",
+        "subtitle": "{{product.name}}"
+      },
+      "narration": {
+        "text": "Kapitalschutz und Ertragschance in einem Produkt: Wir stellen Ihnen den {{product.name}} vor."
+      }
+    },
+    "s02-was-ist": {
+      "screen": {
+        "items": [
+          {
+            "icon": "shield",
+            "text": "Kapitalschutz {{product.capitalProtectionPct|pct}} am Laufzeitende"
+          },
+          {
+            "icon": "chart",
+            "text": "Chance auf Erträge bis zu {{product.payoutPct|pct}}"
+          }
+        ]
+      },
+      "narration": {
+        "text": "Ein Kapitalschutz-Zertifikat verbindet zwei Dinge: einen Kapitalschutz am Laufzeitende und die Chance auf Erträge bis zu {{product.payoutPct|pct}}."
+      }
+    },
+    "s03-eckdaten": {
+      "screen": {
+        "title": "{{product.name}}",
+        "isin": "ISIN {{product.isin}}",
+        "underlyingLabel": "Basiswert",
+        "underlying": "{{underlying.name}}",
+        "underlyingDescription": "{{underlying.description}}",
+        "timelineStart": "Start {{dates.issue|date}}",
+        "timelineEnd": "Rückzahlung {{dates.maturity|date}}",
+        "timelineMid": "rund {{derived.termYears|int}} Jahre"
+      },
+      "narration": {
+        "text": "Basiswert ist der {{underlying.name}} mit {{underlying.description}}. Die Laufzeit beträgt rund {{derived.termYears|int}} Jahre, vom {{dates.issue|date}} bis zum {{dates.maturity|date}}."
+      }
+    },
+    "s04-stichtag": {
+      "screen": {
+        "title": "Der entscheidende Tag",
+        "dateLabel": "Letzter Bewertungstag",
+        "date": "{{dates.finalValuation|date}}",
+        "question": "Wie hat sich der Index seit dem Start entwickelt?"
+      },
+      "narration": {
+        "text": "Entscheidend ist der letzte Bewertungstag am {{dates.finalValuation|date}}: Dann wird der Index mit seinem Startwert verglichen."
+      }
+    },
+    "s05-auszahlungsprofil": {
+      "screen": {
+        "title": "So funktioniert die Rückzahlung",
+        "xAxis": "Wertentwicklung des Index bis zum letzten Bewertungstag",
+        "yAxis": "Rückzahlung in %",
+        "startLine": "Startwert",
+        "upperLabel": "Maximal {{product.payoutPct|pct}} = {{derived.example.payoutAmount|eur}}",
+        "lowerLabel": "Kapitalschutz {{product.capitalProtectionPct|pct}} = {{derived.example.protectionAmount|eur}}",
+        "midLabel": "1:1 an der Wertentwicklung",
+        "perNominal": "Beispiel: {{derived.example.investment|eur}} investiert"
+      },
+      "narration": {
+        "text": "Steigt der Index bis dahin um {{derived.maxIndexPct|pctAbs}} oder mehr, erhalten Sie den Höchstbetrag von {{product.payoutPct|pct}}, also {{derived.example.payoutAmount|eur}} je {{derived.example.investment|eur}}. Steigt er um weniger als {{derived.protectionIndexPct|pctAbs}} oder fällt er, greift der Kapitalschutz: Sie erhalten {{product.capitalProtectionPct|pct}}, also {{derived.example.protectionAmount|eur}}. Dazwischen nehmen Sie 1 zu 1 an der Wertentwicklung des Index teil."
+      }
+    },
+    "s06-beispiele": {
+      "screen": {
+        "title": "Zwei Beispiele",
+        "subtitle": "{{global.fictionalLabel}}",
+        "labelA": "Index {{illustrations.a.endPct|pctSigned}}",
+        "resultA": "Rückzahlung {{derived.illustrations.a.payoutPct|pct}}",
+        "labelB": "Index {{illustrations.b.endPct|pctSigned}}",
+        "resultB": "Rückzahlung {{derived.illustrations.b.payoutPct|pct}} – Kapitalschutz greift",
+        "startLabel": "Startwert",
+        "durationLabel": "{{derived.termYears|int}} Jahre"
+      },
+      "narration": {
+        "text": "Zwei fiktive Beispiele: Steigt der Index bis zum Ende um {{illustrations.a.endPct|pctAbs}}, erhalten Sie {{derived.illustrations.a.payoutPct|pct}}. Fällt er um {{illustrations.b.endPct|pctAbs}}, erhalten Sie dank Kapitalschutz {{derived.illustrations.b.payoutPct|pct}}."
+      }
+    },
+    "s07-status": {
+      "screen": {
+        "title": "Wo steht der Index heute?",
+        "asOf": "{{global.asOfLabel}}",
+        "startLine": "Startwert",
+        "todayLabel": "Heute {{derived.distancePct|pctSigned}}",
+        "distanceBadge": "entspricht {{derived.indicativeRedemptionPct|pct}} Rückzahlung",
+        "zoneMax": "Maximal {{product.payoutPct|pct}}",
+        "zoneMid": "1:1-Teilnahme",
+        "zoneLower": "Kapitalschutz {{product.capitalProtectionPct|pct}}",
+        "finalValuationLabel": "Letzter Bewertungstag {{dates.finalValuation|date}}",
+        "remaining": "noch {{derived.yearsToMaturity|yearsApprox}}",
+        "note": "Momentaufnahme – keine Prognose"
+      },
+      "narration": {
+        "variantBy": "derived.position",
+        "variants": {
+          "ueber": "Und heute? Am {{asOf|date}} lag der Index {{derived.distancePct|pctAbs}} über dem Startwert. Bliebe es am letzten Bewertungstag dabei, gäbe es {{derived.indicativeRedemptionPct|pct}}. Bis dahin sind es aber noch {{derived.yearsToMaturity|yearsApprox}}: eine Momentaufnahme, keine Prognose.",
+          "auf": "Und heute? Am {{asOf|date}} lag der Index praktisch genau auf dem Startwert. Bliebe es am letzten Bewertungstag dabei, gäbe es {{derived.indicativeRedemptionPct|pct}}. Bis dahin sind es aber noch {{derived.yearsToMaturity|yearsApprox}}: eine Momentaufnahme, keine Prognose.",
+          "unter": "Und heute? Am {{asOf|date}} lag der Index {{derived.distancePct|pctAbs}} unter dem Startwert. Bliebe es am letzten Bewertungstag dabei, gäbe es dank Kapitalschutz {{derived.indicativeRedemptionPct|pct}}. Bis dahin sind es aber noch {{derived.yearsToMaturity|yearsApprox}}: eine Momentaufnahme, keine Prognose."
+        }
+      }
+    },
+    "s08-rendite": {
+      "screen": {
+        "title": "Aktueller Kaufkurs",
+        "asOf": "{{global.asOfLabel}}",
+        "priceLabel": "Kaufkurs des Zertifikats",
+        "price": "{{quote.certificate.askPct|pct}}",
+        "warning": "Während der Laufzeit kann der Kurs schwanken – auch unter {{product.capitalProtectionPct|pct}}."
+      },
+      "narration": {
+        "text": "Der aktuelle Kaufkurs dieses Zertifikats liegt bei {{quote.certificate.askPct|pct}}. Bitte beachten Sie: Während der Laufzeit kann der Kurs schwanken, auch unter {{product.capitalProtectionPct|pct}}."
+      }
+    },
+    "s10-risiken": {
+      "screen": {
+        "title": "Chancen und Risiken",
+        "chances": [
+          "Kapitalschutz von {{product.capitalProtectionPct|pct}} am Laufzeitende",
+          "1:1-Teilnahme an der Wertentwicklung des Index bis maximal {{product.payoutPct|pct}}"
+        ],
+        "risks": [
+          "Ertrag ist auf {{product.payoutPct|pct}} begrenzt",
+          "Kursschwankungen während der Laufzeit – auch unter den Kapitalschutz",
+          "Emittenten- und Bail-in-Risiko, bis hin zum Totalverlust",
+          "Keine Einlagensicherung",
+          "Inflation wird nicht ausgeglichen"
+        ]
+      },
+      "narration": {
+        "text": "Bitte beachten Sie: Der Ertrag ist auf {{product.payoutPct|pct}} begrenzt, Inflation wird nicht ausgeglichen, und es besteht ein Emittenten- und Bail-in-Risiko, ohne Einlagensicherung."
+      }
+    },
+    "s11-cta": {
+      "screen": {
+        "title": "Mehr erfahren",
+        "url": "raiffeisenzertifikate.at",
+        "isin": "ISIN {{product.isin}}",
+        "docs": "Basisinformationsblatt, Prospekt und Endgültige Bedingungen online"
+      },
+      "narration": {
+        "text": "Alle Details, das Basisinformationsblatt und den Prospekt finden Sie auf raiffeisenzertifikate.at."
+      }
+    },
+    "s12-rechtshinweise": {
+      "screen": {
+        "title": "Rechtliche Hinweise",
+        "pages": [
+          "[MOCK – RECHTSTEXT SEITE 1: wird von Compliance geliefert und ersetzt diesen Platzhalter. Inhalt u. a.: Werbemitteilung, keine Anlageberatung, Basisprospekt und Endgültige Bedingungen auf raiffeisenzertifikate.at/wertpapierprospekte, Basisinformationsblatt (KID) unter Eingabe der ISIN {{product.isin}}.]",
+          "[MOCK – RECHTSTEXT SEITE 2: Emittentenrisiko und Bail-in-Risiko der {{product.issuer}}, Marktrisiko, Kapitalschutz nur am Laufzeitende, Inflation wird nicht ausgeglichen.]"
+        ]
+      },
+      "narration": null
+    },
+    "s13-outro": {
+      "screen": {},
+      "narration": null
+    }
+  }
+}

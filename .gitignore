@@ -10,3 +10,5 @@ Pipeline/Audio/__pycache__/voiceOver.cpython-310.pyc
 Pipeline/models/
 animation/node_modules
 animation/dist
+output
+temp

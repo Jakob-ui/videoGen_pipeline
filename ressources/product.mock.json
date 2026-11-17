@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "source": "mock",
+  "_comment": "MOCK-Daten. Werte angelehnt an raiffeisenzertifikate.at (Stand 11.11.2026, verzögert). Kursverlauf in history ist FIKTIV und nur für Layout/Entwicklung gedacht. Wird später durch Server-Response mit identischem Schema ersetzt.",
+  "asOf": "2026-11-11T08:54:34Z",
+  "product": {
+    "name": "Global Aktien Bond 106 %",
+    "isin": "AT0000A3UL37",
+    "wkn": "RC1L3X",
+    "issuer": "Raiffeisen Bank International AG",
+    "category": "Kapitalschutz-Zertifikat",
+    "eusipaCode": 1199,
+    "currency": "EUR",
+    "nominal": 1000,
+    "issuePricePct": 100.0,
+    "capitalProtectionPct": 106.0,
+    "payoutPct": 129.0,
+    "payoutLevelPctOfStart": 129.0,
+    "participationPct": 100.0,
+    "capPct": 129.0,
+    "listings": ["Wien", "Stuttgart"],
+    "tax": "KESt-pflichtig",
+    "marketExpectation": "steigend",
+    "suitabilityText": "Es eignet sich für Anleger:innen, die (zumindest) von einer Seitwärtsbewegung des Index ausgehen.",
+    "productUrl": "https://www.raiffeisenzertifikate.at/zertifikat/global-aktien-bond-106-pct-xii-at0000a3ul37"
+  },
+  "dates": {
+    "firstValuation": "2026-06-24",
+    "issue": "2026-06-25",
+    "finalValuation": "2032-06-23",
+    "maturity": "2032-06-25"
+  },
+  "underlying": {
+    "name": "MSCI World 4.5% Decrement EUR Index",
+    "shortName": "MSCI World",
+    "description": "über 1.300 Aktien aus 23 Ländern",
+    "currency": "EUR",
+    "startLevel": 2536.44,
+    "decrementPct": 4.5
+  },
+  "quote": {
+    "indicativeRedemptionPct": 106.0,
+    "certificate": {
+      "askPct": 99.24,
+      "bidPct": 97.74,
+      "timestamp": "2026-11-11T08:54:34Z"
+    },
+    "underlying": {
+      "last": 2598.25,
+      "changePct": 0.37,
+      "timestamp": "2026-11-11T08:44:32Z",
+      "delayed": true
+    }
+  },
+  "history": {
+    "underlying": [
+      { "date": "2026-06-24", "close": 2536.44 },
+      { "date": "2026-07-01", "close": 2531.57 },
+      { "date": "2026-07-08", "close": 2524.59 },
+      { "date": "2026-07-15", "close": 2517.07 },
+      { "date": "2026-07-22", "close": 2537.83 },
+      { "date": "2026-07-29", "close": 2508.32 },
+      { "date": "2026-08-05", "close": 2414.41 },
+      { "date": "2026-08-12", "close": 2417.18 },
+      { "date": "2026-08-19", "close": 2420.82 },
+      { "date": "2026-08-26", "close": 2442.17 },
+      { "date": "2026-09-02", "close": 2474.04 },
+      { "date": "2026-09-09", "close": 2499.11 },
+      { "date": "2026-09-16", "close": 2558.29 },
+      { "date": "2026-09-23", "close": 2591.63 },
+      { "date": "2026-09-30", "close": 2598.87 },
+      { "date": "2026-10-07", "close": 2566.47 },
+      { "date": "2026-10-14", "close": 2521.89 },
+      { "date": "2026-10-21", "close": 2534.97 },
+      { "date": "2026-10-28", "close": 2597.43 },
+      { "date": "2026-11-04", "close": 2601.3 },
+      { "date": "2026-11-11", "close": 2598.25 }
+    ]
+  },
+  "documents": [
+    { "type": "datenblatt", "title": "Datenblatt", "date": "2026-11-11" },
+    { "type": "broschuere", "title": "Produktbroschüre", "date": null },
+    { "type": "basisprospekt", "title": "Basisprospekt für strukturierte Wertpapiere", "date": "2026-04-10" },
+    { "type": "endgueltige-bedingungen", "title": "Endgültige Bedingungen", "date": "2026-05-18" }
+  ]
+}
