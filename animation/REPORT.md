@@ -79,7 +79,6 @@ Die PNGs sind einfarbig und werden per CSS `mask-image` + `background: currentCo
 - TTS-Engine und Sprechtempo: Der Schätzer nimmt 15 Zeichen/s an und muss nach dem ersten echten TTS-Lauf kalibriert
   werden (`CHARS_PER_SECOND` in `core/template/narration.ts`).
 - Markterwartung: Datenfeld „steigend“, Text „zumindest Seitwärtsbewegung“. Der Content verwendet den Text.
-- Aussprache „XII“ als „Serie 12“ bestätigen.
 - Sollen Folien später dynamisch so lang werden wie das Audio? Derzeit bleibt die Folienlänge fix.
 - Die Python-Pipeline (`Pipeline/pipeline.py`) nutzt noch den alten Vertrag (`window.__VIDEO__`,
   `/render/sparplan/...`, `dist/video-studio/`) und muss auf `docs/PIPELINE_CONTRACT.md` umgestellt werden.

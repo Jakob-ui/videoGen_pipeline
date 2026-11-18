@@ -16,8 +16,8 @@ REF_TEXT = (
     "Sie merken es wahrscheinlich selbst. Flughäfen sind wieder gut besucht, Flugzeuge gut ausgelastet "
     "und die Menschen reisen gerne, sei es für den Urlaub, Geschäftsreisen oder um Familie und Freunde zu "
     "besuchen. Zwar war die Pandemie der größte Schock für die zivile Luftfahrt seit Jahrzehnten, doch "
-    "inwischen hat sich der Luftverkehr weitgehend erholt. 2025 wurden in Europa wieder rund 11000000 Flüge "
-    "registriert. Das entspricht durchschnisttlich mehr als 30.000 Flügen pro Tag. "
+    "inwischen hat sich der Luftverkehr weitgehend erholt. zweitausendfünfundzwanzig wurden in Europa wieder "
+    "rund elf Millionen Flüge registriert. Das entspricht durchschnisttlich mehr als dreißigtausend Flügen pro Tag. "
 )
 
 
@@ -40,8 +40,8 @@ class VoiceOver:
         import torch
         from qwen_tts import Qwen3TTSModel
 
-        device = "cuda" if torch.cuda.is_available() else "cpu"
-        dtype = torch.bfloat16 if device == "cuda" else torch.float32
+        device = "cpu"
+        dtype = torch.float32
         source = str(LOCAL_MODEL) if LOCAL_MODEL.is_dir() else ONLINE_MODEL
         print(f"  TTS-Modell laden: {source} ({device}, {dtype})")
         try:

@@ -113,7 +113,6 @@ def run(
             print(f"  {len(manifest['slides'])} Folien, {manifest['totalDurationMs'] / 1000:.1f} s, "
                   f"Daten: {manifest['dataSource']} (Stand {manifest['dataAsOf']})")
 
-            # Audio first: if a text doesn't fit we abort before the long recording.
             step("Voice-over erzeugen" if voice != "none" else "Voice-over: aus (stille Tonspur)")
             tts = None
             if voice != "none":

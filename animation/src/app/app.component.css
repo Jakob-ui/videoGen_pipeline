@@ -1,0 +1,43 @@
+:host { display: block; width: 100%; height: 100%; }
+.video-frame {
+  position: relative; width: 100vw; height: 100vh; min-height: 600px; overflow: hidden;
+  color: #f7f5ef; background: #071b2c; font-family: Arial, Helvetica, sans-serif;
+}
+.grid-glow {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 75% 42%, rgba(35, 122, 160, .42), transparent 34%),
+    linear-gradient(115deg, #061421 0%, #0b2f48 52%, #092238 100%);
+}
+.grid-glow::after {
+  content: ''; position: absolute; inset: 0; opacity: .16;
+  background-image: linear-gradient(rgba(154, 204, 216, .35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(154, 204, 216, .35) 1px, transparent 1px);
+  background-size: 72px 72px; transform: perspective(500px) rotateX(58deg) scale(1.7) translateY(28%);
+}
+.brand { position: absolute; z-index: 2; top: 7%; left: 7%; display: flex; align-items: center; gap: 14px; text-transform: uppercase; }
+.brand-mark { display: grid; place-items: center; width: 52px; height: 52px; border: 2px solid #d5ab45; border-radius: 50%; color: #d5ab45; font: bold 28px Georgia, serif; }
+.brand-name { color: #d5ab45; font: italic 22px Georgia, serif; letter-spacing: 2px; }
+.brand-name b { display: block; color: #d8e6e9; font: 10px Arial, sans-serif; letter-spacing: 3px; margin-top: 4px; }
+.content { position: absolute; z-index: 1; top: 29%; left: 11%; max-width: 720px; animation: enter .55s ease-out; }
+.eyebrow { color: #d5ab45; font-size: 15px; font-weight: bold; letter-spacing: 4px; margin: 0 0 24px; }
+h1, h2 { font: 500 76px/1.03 Georgia, 'Times New Roman', serif; letter-spacing: -2px; margin: 0; }
+h1 em, h2 em { color: #d5ab45; font-style: normal; }
+.intro { color: #bed0d5; font-size: 22px; line-height: 1.5; max-width: 580px; margin: 30px 0; }
+.line { width: 100px; height: 3px; background: #d5ab45; }
+.split { display: flex; align-items: center; gap: 160px; }
+.shield { width: 230px; height: 230px; display: grid; place-content: center; text-align: center; border: 2px solid #d5ab45; transform: rotate(45deg); }
+.shield span, .shield small { transform: rotate(-45deg); }
+.shield span { color: #d5ab45; font: 64px Georgia, serif; }
+.shield small { color: #d8e6e9; font-size: 11px; letter-spacing: 2px; line-height: 1.5; }
+.centered { left: 0; right: 0; max-width: none; text-align: center; top: 25%; }
+.return-value { color: #d5ab45; font: 150px Georgia, serif; line-height: 1; margin: 20px 0; }
+.return-value span { font-size: 80px; }
+.centered h2 { font-size: 36px; letter-spacing: 0; }
+.muted { color: #bed0d5; font-size: 18px; }
+button { margin-top: 38px; padding: 14px 28px; color: #071b2c; background: #d5ab45; border: 0; border-radius: 2px; font-weight: bold; cursor: pointer; }
+.disclaimer { color: #9ab2ba; font-size: 11px; margin: 48px auto 0; max-width: 530px; line-height: 1.5; }
+footer { position: absolute; z-index: 2; bottom: 8%; left: 7%; right: 7%; display: flex; justify-content: space-between; color: #9ab2ba; font-size: 11px; letter-spacing: 2px; }
+.progress { position: absolute; z-index: 2; bottom: 5%; left: 7%; right: 7%; height: 2px; background: rgba(213, 171, 69, .25); }
+.progress div { height: 100%; background: #d5ab45; transition: width 50ms linear; }
+@keyframes enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) { h1, h2 { font-size: 52px; } .split { gap: 70px; } .shield { width: 160px; height: 160px; } .return-value { font-size: 110px; } }

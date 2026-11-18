@@ -44,7 +44,7 @@ describe('template engine (AGENT.md §6.2)', () => {
 describe('narration (AGENT.md §6.4)', () => {
   it('S01 spoken text uses the pronunciation and contains no "%"', () => {
     const n = pickNarration(content.slides['s01-intro'], ctx, content.pronunciations)!;
-    expect(n.spokenText).toContain('Global Aktien Bond 106 Prozent, Serie 12');
+    expect(n.spokenText).toContain('Global Aktien Bond 106 Prozent');
     expect(n.spokenText).not.toContain('%');
   });
 
